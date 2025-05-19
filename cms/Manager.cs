@@ -35,7 +35,7 @@ public class Manager
     public Autore CreaAutore(string? nome, string? cognome)
     {
         Autore nuovoAutore = new Autore(nome ?? string.Empty, cognome ?? string.Empty);
-        autori.Add(nuovoAutore);
+        if (this.EsisteAutore(nuovoAutore) == (-1)) autori.Add(nuovoAutore);
         return nuovoAutore;
     }
 
@@ -50,7 +50,7 @@ public class Manager
     public Articolo CreaArticolo(string? titolo, string? testo, DateTime? dataPubblicazione, Categoria? categoria, Autore? autore)
     {
         categoria ??= new Categoria();
-        
+
         autore ??= new Autore();
 
         Articolo articolo = new Articolo(titolo, testo, dataPubblicazione, categoria, autore);
@@ -59,7 +59,7 @@ public class Manager
         {
             categorie.Add(categoria);
             categoria.NumeroArticoli.Add(articolo);
-        } 
+        }
         if (this.EsisteAutore(autore) == (-1)) autori.Add(autore);
 
         return articolo;
@@ -92,6 +92,23 @@ public class Manager
 
         return -1;
     }
-    
 
+    public void MostraAutori()
+    {
+
+        this.Instestazione("AUTORI");
+        autori.ForEach(author =>
+        {
+            System.Console.WriteLine($"{author.Nome} {author.Cognome}");
+        });
+        System.Console.WriteLine("\n");
+    }
+
+    public void Instestazione(string intestazione)
+    {
+        Console.ForegroundColor = ConsoleColor.DarkGreen;
+        System.Console.WriteLine($"\n-----------{intestazione}-----------");
+        Console.ResetColor();
+    }
+    
 }
