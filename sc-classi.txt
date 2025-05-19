@@ -1,0 +1,21 @@
+Il compito dice:
+Creiamo un CMS (Tipo Wordpress) che gestisca la pubblicazione di Articoli.
+Preoccupiamoci della suddivisione in classe delle entità che compongono il nostro progetto
+Creaimo 1 file per ogni classe.
+
+Classe "Autore" con i seguenti memebri ( Prorprietà Nome, Propeprietà Cognome)
+Classe "Categoria" con i seguenti membri (Prorpeità Titolo, Proprietà NumeroArticolo (elenco Articoli appeartenenti alla Categoria)
+Classe "Articilolo" con i seguenti memebri ( Prorpeità Titolo, Prorpeità Testo, Proprietà DataPubblicatione, Prorpeità Categoria (tipo di dato Call Categoria nullable), Proprietà Autore (tipo di dato Classe Autore nullable)
+
+Classe "Manager" con i seguenti memebri ( Proprietà Lista Autori (solo get), Prorpeità Lista Categorie (solo get), Prorpeità Lista Articoli (solo get), Metodo Crea Autore, Metodo Crea Categoria, Metodo Crea Articolo)
+
+Questa classe si preoccupa della business logic del nostro programma, conterrà cioè tutte le funzioni (Metodi) per la gestione del CMS
+Cercate di capire in autonomia, in base alle prorpeità delle classi (Autro, Categoria, Articolo di cui sopra) quali saranno i parametri dei Metodi, e le istruzioni da seguire
+
+Dopo aver creato le classe
+Crreare 2 Autori
+Crere due Categorie
+Creare 2 articoli (Utilizzando le Categorie e gli Autori creari in precedenza)
+Stampare in console il totale degli Articoli present in ogni categoria
+Stampate in console gli articoli creari, visualizzando cnahe le infor su Autore e categoria
+Stampare in cosnoel il totale delle liste (Auuroti, Categori, Articoli) dell'Oggetto Manager
