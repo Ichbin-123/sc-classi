@@ -1,5 +1,6 @@
 using System.Net;
 using System.Reflection.Metadata.Ecma335;
+using System.Runtime.CompilerServices;
 
 namespace sc_classi.cms;
 
@@ -8,7 +9,7 @@ public class Manager
 
     public Manager()
     {
-        
+
     }
     // public List<Autore> Autori { get; private set; } = new List<Autore>();
     // public List<Categoria> Categorie { get; private set; } = new List<Categoria>();
@@ -29,7 +30,7 @@ public class Manager
     public List<Articolo> Articoli
     {
         get { return new List<Articolo>(articoli); }
-    }  
+    }
 
     public Autore CreaAutore(string? nome, string? cognome)
     {
@@ -46,10 +47,51 @@ public class Manager
         return nuovaCategoria;
     }
 
-    public Articolo CreaArticolo(string titolo, string testo, DateTime dataPubblicazione, Categoria categoria, Autore autore)
+    public Articolo CreaArticolo(string? titolo, string? testo, DateTime? dataPubblicazione, Categoria? categoria, Autore? autore)
     {
-        return new Articolo();
+        categoria ??= new Categoria();
+        
+        autore ??= new Autore();
+
+        Articolo articolo = new Articolo(titolo, testo, dataPubblicazione, categoria, autore);
+
+        if (this.EsiteCategoria(categoria) == (-1))
+        {
+            categorie.Add(categoria);
+            categoria.NumeroArticoli.Add(articolo);
+        } 
+        if (this.EsisteAutore(autore) == (-1)) autori.Add(autore);
+
+        return articolo;
     }
 
+    public int EsisteAutore(Autore autore)
+    {
+        for (int i = 0; i < autori.Count; i++)
+        {
+            if (autori[i].Nome == autore.Nome && autori[i].Cognome == autore.Cognome)
+            {
+                return i;
+            }
+        }
+        ;
+
+        return -1;
+    }
+
+    public int EsiteCategoria(Categoria categoria)
+    {
+        for (int i = 0; i < categorie.Count; i++)
+        {
+            if (categorie[i].Titolo == categoria.Titolo)
+            {
+                return i;
+            }
+        }
+        ;
+
+        return -1;
+    }
+    
 
 }

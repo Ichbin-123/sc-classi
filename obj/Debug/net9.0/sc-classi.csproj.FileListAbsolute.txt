@@ -1,0 +1,15 @@
+C:\Test\sc-classi\bin\Debug\net9.0\sc-classi.exe
+C:\Test\sc-classi\bin\Debug\net9.0\sc-classi.deps.json
+C:\Test\sc-classi\bin\Debug\net9.0\sc-classi.runtimeconfig.json
+C:\Test\sc-classi\bin\Debug\net9.0\sc-classi.dll
+C:\Test\sc-classi\bin\Debug\net9.0\sc-classi.pdb
+C:\Test\sc-classi\obj\Debug\net9.0\sc-classi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Test\sc-classi\obj\Debug\net9.0\sc-classi.AssemblyInfoInputs.cache
+C:\Test\sc-classi\obj\Debug\net9.0\sc-classi.AssemblyInfo.cs
+C:\Test\sc-classi\obj\Debug\net9.0\sc-classi.csproj.CoreCompileInputs.cache
+C:\Test\sc-classi\obj\Debug\net9.0\sc-classi.sourcelink.json
+C:\Test\sc-classi\obj\Debug\net9.0\sc-classi.dll
+C:\Test\sc-classi\obj\Debug\net9.0\refint\sc-classi.dll
+C:\Test\sc-classi\obj\Debug\net9.0\sc-classi.pdb
+C:\Test\sc-classi\obj\Debug\net9.0\sc-classi.genruntimeconfig.cache
+C:\Test\sc-classi\obj\Debug\net9.0\ref\sc-classi.dll

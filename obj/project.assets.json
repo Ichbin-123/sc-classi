@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Meine Daten\\Personal_Privat\\Labforweb\\Labforweb_E\\sc-classi\\sc-classi\\sc-classi.csproj",
+      "projectUniqueName": "C:\\Test\\sc-classi\\sc-classi.csproj",
       "projectName": "sc-classi",
-      "projectPath": "F:\\Meine Daten\\Personal_Privat\\Labforweb\\Labforweb_E\\sc-classi\\sc-classi\\sc-classi.csproj",
+      "projectPath": "C:\\Test\\sc-classi\\sc-classi.csproj",
       "packagesPath": "C:\\Users\\marco.furfaro\\.nuget\\packages\\",
-      "outputPath": "F:\\Meine Daten\\Personal_Privat\\Labforweb\\Labforweb_E\\sc-classi\\sc-classi\\obj\\",
+      "outputPath": "C:\\Test\\sc-classi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\marco.furfaro\\AppData\\Roaming\\NuGet\\NuGet.Config"
