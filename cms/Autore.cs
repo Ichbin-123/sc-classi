@@ -8,12 +8,17 @@ public class Autore
     }
     public Autore(string? nome, string? cognome)
     {
-        this.Nome = (nome==null || nome==string.Empty) ? "Autore" : nome;
-        this.Cognome = (cognome==null || cognome==string.Empty) ? "Ignoto" : cognome;
+        this.Nome = (nome == null || nome == string.Empty) ? "Autore" : nome;
+        this.Cognome = (cognome == null || cognome == string.Empty) ? "Ignoto" : cognome;
     }
 
     public string Nome { get; set; }
     public string Cognome { get; set; }
+    
+    public void MostraAutore()
+    {
+       Console.WriteLine($"{this.Nome} {this.Cognome}");
+    }
 }
 
     // Versione richiesta

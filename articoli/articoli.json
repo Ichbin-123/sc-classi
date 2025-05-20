@@ -1,0 +1,50 @@
+[
+  {
+    "Id": 1,
+    "Titolo": "Enciclopedia del basket. Allenarsi al successo",
+    "DataPubblicazione": "1976-01-20",
+    "Categoria": { "Titolo": "Sport" },
+    "Autore": { "Nome": "Matteo", "Cognome": "Lebron" },    
+    "Testo": "Imparare e insegnare le tattiche e le abilità del basket può essere difficile. Metterle in pratica durante le partite può diventare problematico. Padroneggiarle alla perfezione può richiedere lo sforzo di tutta una vita. È possibile che un unico libro sia in grado di fornire tutte le istruzioni necessarie per raggiungere ciascuno di questi obiettivi? Prima di tutto bisogna conoscere il modo giusto di eseguire una determinata azione. Fatto! Poi si deve ripetere quell'azione più e più volte, facendosi correggere da un esperto finché non si sarà in grado di eseguirla in maniera corretta. Fatto! Poi ci si deve allenare instancabilmente con esercizi specifici per rendere l'esecuzione efficace ed efficiente. Fatto! In \"Enciclopedia del basket\" il coach Hai Wissel copre l'intera progressione di sviluppo tecnico e tattico che serve per diventare un giocatore completo. Spaziando dai fondamentali del lavoro di piedi ai principi chiave della difesa, questa guida descrive nel dettaglio le abilità e le tattiche necessarie per eccellere nel basket dei giorni nostri. Ogni step di questo volume, con tematiche quali la ricezione, il tiro e i giochi a due e a tre, è pensato appositamente per condurre i giocatori al successo in ogni situazione di gioco."
+  },
+  {
+    "Id": 2,
+    "Titolo": "BASEBALL: Diario di Allenamento - Monitora, Migliora e Domina sul Campo",
+    "DataPubblicazione": "1980-06-26",
+    "Categoria": { "Titolo": "Sport" },
+    "Autore": { "Nome": "Marco", "Cognome": "Di Maggio" },   
+    "Testo": "Sei pronto a portare il tuo allenamento di baseball al livello successivo? Presentiamo il \"Diario di Allenamento di Baseball\"-un quaderno completo progettato per elevare la tua performance sul campo come mai prima d'ora. Con 100 pagine di modelli realizzati con cura, questo diario è il tuo compagno definitivo per monitorare i tuoi progressi, fissare obiettivi e perfezionare le tue abilità. Ogni pagina ti consente di registrare dettagli vitali come la data, l'umore, l'orario di inizio e fine dell'allenamento, la durata, le condizioni meteorologiche, la posizione dell'allenamento e la presenza del tuo allenatore. Non solo un diario, ma una mappa per il successo, questo taccuino presenta sezioni dedicate agli obiettivi dell'allenatore, agli obiettivi del giocatore, alle tecniche apprese, aree di miglioramento e ampio spazio per note personali. Che tu sia un giocatore esperto o alle prime armi, questo diario ti aiuterà a rimanere organizzato, motivato e concentrato nel tuo percorso per diventare un giocatore di baseball di alto livello. Fornisciti degli strumenti di cui hai bisogno per eccellere sul campo. Prendi la tua copia del \"Diario di Allenamento di Baseball\" oggi e trasforma le tue sessioni di allenamento in prestazioni vincenti!"
+  },
+  {
+    "Id": 3,
+    "Titolo": "Cucina thai",
+    "DataPubblicazione": "2017-08-24",
+    "Categoria": { "Titolo": "Cucina" },
+    "Autore": { "Nome": "Tom", "Cognome": "Kime" },   
+    "Testo": "Portate in tavola il profumo della citronella, del coriandolo e di tante altre spezie, e sperimentate una vera e propria avventura culinaria. Scoprite i segreti della cucina thai in 100 ricette sane, autentiche e deliziose."
+  },
+  {
+    "Id": 4,
+    "Titolo": "Coltivare bio con successo. Il primo manuale di orticultura bio-intensiva per piccole aziende",
+    "DataPubblicazione": "2018-05-30",
+    "Categoria": { "Titolo": "Botanica" },
+    "Autore": { "Nome": "Jean-Martin", "Cognome": "Fortier" },   
+    "Testo": "Dopo il successo in Canada, Germania, Francia e Regno Unito, \"Coltivare bio con successo\" è diventato il manifesto della nuova agricoltura per le piccole aziende biologiche, in grado di stimolare un circuito economico virtuoso a livello locale, assicurare un reddito decoroso all'agricoltore, creare posti di lavoro per i giovani e un rapporto diretto tra produttore e consumatore. Nel libro, l'autore condivide le strategie agronomiche ed economiche che hanno decretato il successo della sua azienda: la vendita a chilometro zero, l'organizzazione degli spazi secondo i principi della permacultura, l'impiego di attrezzi e macchine innovativi, la riduzione delle lavorazioni del terreno, il metodo di coltivazione bio-intensivo. La parte conclusiva del libro è arricchita dalle schede pratiche per coltivare oltre 25 ortaggi. Tutti questi ingredienti fanno di \"Coltivare bio con successo\" una guida per le piccole aziende agricole, ma anche per i giovani neo-agricoltori che vedono nell'agricoltura biologica uno spazio per il loro futuro e un contributo concreto per la salvaguardia del pianeta. L'edizione italiana è stata curata da Myrtha Zierock, orticoltrice trentina che ha lavorato presso l'azienda dell'autore e che ha adattato le indicazioni tecniche al nostro clima e contesto."
+  },
+  {
+    "Id": 5,
+    "Titolo": "Il massaggio thailandese",
+    "DataPubblicazione": "1993-05-01",
+    "Categoria": { "Titolo": "Benessere" },
+    "Autore": { "Nome": "Harald", "Cognome": "Brust" },   
+    "Testo": "Quest'opera contiene i principi teorici e pratici del massaggio thailandese. Questa forma di massaggio viene praticata da più di 2200 anni in Thailandia, dove è stata introdotta, attraverso l'insegnamento del buddhismo, insieme alla medicina indiana ed al massaggio yoga. Da allora viene esercitata come pratica buddhista ed insegnata nei templi. Il metodo consiste in due interventi combinati e complementari da parte del terapista: applicare pressioni su punti ben precisi (agopressione) e far assumere al paziente posizioni yoga di stiramento. Come nell'agopressione cinese e nello shiatsu giapponese, vengono lavorate le linee di energia (meridiani o sen) per facilitare la circolazione del prana (l'energia del corpo invisibile). Infatti, principio fondamentale della filosofia yoga è che nell'uomo, oltre al corpo fisico, esiste il corpo energetico, il cui equilibrio è indispensabile per il benessere."
+  },
+  {
+    "Id": 6,
+    "Titolo": "Caccia alla lepre al fagiano alla pernice ed alla quaglia. Scritti anonimi, riveduti, completati ed annotati.",
+    "DataPubblicazione": "1925-12-31",
+    "Categoria": { "Titolo": "Caccia" },
+    "Autore": { "Nome": "Luigi", "Cognome": "Ghidini" },   
+    "Testo": "Milano, 1926, 8vo brossura con copertina illustrata, pp.159 con 19 ill. f.t. Prima edizione. (Ceresoli, 275/276: \"Interessante opera ...\")"
+  }
+]

@@ -6,15 +6,13 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        Services.ClearScreen();
+        string pathFileArticoli = Services.GetArticoliPath();
 
         Manager manager = new Manager();
-        manager.CreaAutore("Marco", "Fuchs");
-        manager.CreaAutore("Andrea", "Fuchs");        
-        manager.CreaAutore("Andrea", "Fuchs");        
-        manager.CreaAutore("Andrea", "Fuchs");        
-        manager.CreaAutore("Andrea", "Fuchs");        
-        manager.CreaAutore("Marco", "Fuchs");
+        manager.CaricaArticoliDaFile(pathFileArticoli);
+        manager.MostraArticoli();
+        manager.MostraCategorie();
         manager.MostraAutori();
     }
 }

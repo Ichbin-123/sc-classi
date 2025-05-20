@@ -43,26 +43,41 @@ public class Manager
     {
         numeroArticoli ??= new List<Articolo>();
         Categoria nuovaCategoria = new Categoria(titolo ?? string.Empty, numeroArticoli);
-        categorie.Add(nuovaCategoria);
+        if (this.EsiteCategoria(nuovaCategoria) == (-1)) categorie.Add(nuovaCategoria);
         return nuovaCategoria;
     }
 
     public Articolo CreaArticolo(string? titolo, string? testo, DateTime? dataPubblicazione, Categoria? categoria, Autore? autore)
     {
+        Console.ForegroundColor = ConsoleColor.Red;
         categoria ??= new Categoria();
+        Console.WriteLine($"Test categoria: {categoria.Titolo}");
 
         autore ??= new Autore();
+        Console.WriteLine($"Test autore: {autore.Cognome}");
 
-        Articolo articolo = new Articolo(titolo, testo, dataPubblicazione, categoria, autore);
+        Articolo nuovoArticolo = new Articolo(titolo, testo, dataPubblicazione, categoria, autore);
+        Console.WriteLine($"Test articolo: {nuovoArticolo.Titolo}");
 
-        if (this.EsiteCategoria(categoria) == (-1))
+        int esisteCategoria = this.EsiteCategoria(categoria);
+
+        if (esisteCategoria == (-1))
         {
             categorie.Add(categoria);
-            categoria.NumeroArticoli.Add(articolo);
+            Console.WriteLine($"Test inserimento se esistente");
         }
-        if (this.EsisteAutore(autore) == (-1)) autori.Add(autore);
+        else
+        {
+            categoria = categorie[esisteCategoria];
+            Console.WriteLine($"Test inserimento se INesistente");
+        }
+        categoria.InserisciArticolo(nuovoArticolo);
+        articoli.Add(nuovoArticolo);
 
-        return articolo;
+        if (this.EsisteAutore(autore) == (-1)) autori.Add(autore);
+        Console.ResetColor();
+
+        return nuovoArticolo;
     }
 
     public int EsisteAutore(Autore autore)
@@ -75,7 +90,6 @@ public class Manager
             }
         }
         ;
-
         return -1;
     }
 
@@ -89,26 +103,64 @@ public class Manager
             }
         }
         ;
-
         return -1;
     }
 
     public void MostraAutori()
     {
 
-        this.Instestazione("AUTORI");
-        autori.ForEach(author =>
+        Services.Instestazione("AUTORI", "primo");
+        this.autori.ForEach(author =>
         {
-            System.Console.WriteLine($"{author.Nome} {author.Cognome}");
+            author.MostraAutore();
         });
         System.Console.WriteLine("\n");
     }
 
-    public void Instestazione(string intestazione)
+    public void MostraCategorie()
     {
-        Console.ForegroundColor = ConsoleColor.DarkGreen;
-        System.Console.WriteLine($"\n-----------{intestazione}-----------");
-        Console.ResetColor();
+        Services.Instestazione("CATEGORIE", "primo");
+        this.categorie.ForEach(categoria =>
+        {
+            categoria.MostraCategoria();
+        });
+        System.Console.WriteLine("\n");
     }
-    
+
+    public void MostraArticoli()
+    {
+        Services.Instestazione("ARTICOLI", "primo");
+        this.articoli.ForEach(articolo =>
+        {
+            articolo.MostraArticolo();
+        });
+        System.Console.WriteLine("\n");
+    }
+
+    public void CaricaArticoliDaFile(string percorsoFile)
+    {
+        List<Articolo>? articoliDaFile = Services.LeggiArticoliDaFile(percorsoFile);
+        if (articoliDaFile == null) return;
+
+        int maxIndex = 0;
+        foreach (var articolo in articoliDaFile)
+        {
+            if (EsisteAutore(articolo.Autore!) == -1)
+            {
+                this.autori.Add(articolo.Autore!);
+            }
+
+            int indiceCategoria = EsiteCategoria(articolo.Categoria!);
+            if (indiceCategoria == -1)
+                this.categorie.Add(articolo.Categoria!);
+            else
+                articolo.Categoria = this.categorie[indiceCategoria];
+
+            this.articoli.Add(articolo);
+            if (articolo.Id > maxIndex) maxIndex = articolo.Id;
+        }
+        Articolo.SetCounter(maxIndex + 1);
+        
+    }
+
 }

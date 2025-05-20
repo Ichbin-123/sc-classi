@@ -14,6 +14,38 @@ public class Categoria
 
     public string Titolo { get; set; }
     public List<Articolo> NumeroArticoli { get; set; }
+
+    public void InserisciArticolo(Articolo articolo)
+    {
+        if (articolo.Categoria!.Titolo == this.Titolo)
+        {
+            if (this.EsiteArticolo(articolo) == (-1))
+            {
+                this.NumeroArticoli.Add(articolo);                
+            }
+        }
+    }
+
+    public void MostraCategoria()
+    {
+        Services.Instestazione($"CATEGORIA: {this.Titolo}", "secondo");
+        this.NumeroArticoli.ForEach(art =>
+        {
+            Console.WriteLine($"{art.Id} - {art.Titolo}");
+        });
+    }
+
+    public int EsiteArticolo(Articolo articolo)
+    {
+        for (int i = 0; i < this.NumeroArticoli.Count; i++)
+        {
+            if (this.NumeroArticoli[i].Id == articolo.Id)
+            {
+                return i;
+            }
+        };
+        return -1;
+    }
 }
 
     // Versione richiesta

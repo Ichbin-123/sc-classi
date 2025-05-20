@@ -8,19 +8,19 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\marco.furfaro\\.nuget\\packages\\": {}
+    "C:\\Users\\marco\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Test\\sc-classi\\sc-classi.csproj",
+      "projectUniqueName": "E:\\LABFORWEB\\Labforweb_CEMV\\CS_Language\\Progetto\\sc-classi\\sc-classi.csproj",
       "projectName": "sc-classi",
-      "projectPath": "C:\\Test\\sc-classi\\sc-classi.csproj",
-      "packagesPath": "C:\\Users\\marco.furfaro\\.nuget\\packages\\",
-      "outputPath": "C:\\Test\\sc-classi\\obj\\",
+      "projectPath": "E:\\LABFORWEB\\Labforweb_CEMV\\CS_Language\\Progetto\\sc-classi\\sc-classi.csproj",
+      "packagesPath": "C:\\Users\\marco\\.nuget\\packages\\",
+      "outputPath": "E:\\LABFORWEB\\Labforweb_CEMV\\CS_Language\\Progetto\\sc-classi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\marco.furfaro\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\marco\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
